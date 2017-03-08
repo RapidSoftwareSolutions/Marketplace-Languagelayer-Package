@@ -1,0 +1,95 @@
+{
+  "package": "Languagelayer",
+  "tagline": "Languagelayer API",
+  "description": "Languagelayer",
+  "image": "http:\/\/logo.clearbit.com\/languagelayer.com",
+  "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-Languagelayer-Package",
+  "keywords": [
+  ],
+  "accounts": {
+    "domain": "languagelayer.com",
+    "credentials": [
+      "apiKey"
+    ]
+  },
+  "blocks": [
+    {
+      "name": "getLanguages",
+      "description": "Get list of supported languages",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key obtained from Languagelayer",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "detectSingleTextLanguage",
+      "description": "Standard language detection",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key obtained from Languagelayer",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "Query text",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "detectLanguages",
+      "description": "Multiple query texts detection",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key obtained from Languagelayer",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "Array",
+          "info": "Array of query texts",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}
