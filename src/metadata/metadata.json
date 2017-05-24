@@ -75,9 +75,17 @@
         },
         {
           "name": "query",
-          "type": "Array",
+          "type": "List",
           "info": "Array of query texts",
-          "required": true
+          "required": true,
+          "structure": [
+            {
+              "name": "text",
+              "type": "String",
+              "info": "name",
+              "required": false
+            }
+          ]
         }
       ],
       "callbacks": [
