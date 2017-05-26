@@ -78,14 +78,13 @@
           "type": "List",
           "info": "Array of query texts",
           "required": true,
-          "structure": [
+          "structure":
             {
               "name": "text",
               "type": "String",
-              "info": "name",
-              "required": false
+              "info": "name"
             }
-          ]
+
         }
       ],
       "callbacks": [
